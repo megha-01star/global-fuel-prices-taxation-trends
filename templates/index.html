@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Fuel Prices & Taxation</title>
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">⛽ Fuel<span>Insights</span></div>
+        <a href="#dashboard">Explore Dashboard</a>
+    </nav>
+
+    <header class="hero">
+        <p class="tag">GLOBAL DATA ANALYTICS PROJECT</p>
+        <h1>Global Fuel Prices<br>
+            <span>& Taxation Trends</span></h1>
+        <p class="intro">
+            Explore fuel prices across countries and regions,
+            understand taxation patterns, and discover how
+            prices have changed over time.
+        </p>
+        <a class="btn" href="#dashboard">Explore Analysis ↓</a>
+    </header>
+
+    <section class="about">
+        <h2>About the Project</h2>
+        <p>
+            This project analyzes global gasoline and diesel prices,
+            compares regional differences, and explores fuel taxation
+            and inflation-adjusted prices using data visualization.
+        </p>
+    </section>
+
+    <section id="dashboard" class="dashboard">
+        <p class="tag">DATA VISUALIZATION</p>
+        <h2>Explore the Dashboard</h2>
+        <p>
+            Interactive visualizations of fuel prices, regional
+            comparisons, and taxation trends.
+        </p>
+
+        <div class="dashboard-box">
+            <h3>Tableau Dashboard</h3>
+            <p>Explore interactive fuel price and taxation visualizations.</p>
+
+                <div class="tableau-container">
+                    <tableau-viz
+                        id="fuelDashboard"
+                        src="https://public.tableau.com/views/GlobalFuelPricesandTaxationTrends_17930429298140/Dashboard2?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
+                        width="100%"
+                        height="700"
+                        toolbar="bottom"
+                        hide-tabs>
+                    </tableau-viz>
+                </div>
+
+                <script
+                    type="module"
+                    src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js">
+                </script>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>Global Fuel Prices and Taxation Trends</p>
+        <p>Data-driven insights into global fuel markets</p>
+    </footer>
+    
+<!-- Tableau Story Section -->
+<section id="story" class="dashboard-section">
+    <h2>Global Fuel Prices: Data Story</h2>
+    <p>
+        Explore the key trends and comparisons in global fuel
+        prices and taxation through our Tableau Story.
+    </p>
+
+    <div class="tableau-container">
+        <tableau-viz
+            id="fuelStory"
+            src="https://public.tableau.com/views/GlobalFuelPricesandTaxationTrends_17930429298140/Story1?:language=en-GB&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
+            width="100%"
+            height="700"
+            toolbar="bottom"
+            hide-tabs>
+        </tableau-viz>
+    </div>
+</section>
+
+
+</body>
+</html>
