@@ -54,7 +54,7 @@ GlobalFuelProject/
 │   └── index.html
 ├── static/
 │   └── style.css
-└── data files (if stored in this folder)
+└── Project file
 
 ## 10. How to Run the Website
 1. Install Python if it is not already installed.
@@ -69,7 +69,7 @@ GlobalFuelProject/
 
 5. Open a browser and visit:
 
-   http://127.0.0.1:5000
+   http://127.0.0.1:5000/
 
 ## 11. Published Tableau Links
 - Tableau Dashboard: [https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js]
@@ -77,9 +77,3 @@ GlobalFuelProject/
 
 ## 12. Conclusion
 This project combines data visualization and web development to present global fuel-price and taxation trends in an accessible format. The dashboard and story help users explore differences across countries, regions and years.
-
-## 13. Future Scope
-- Add more recent fuel-price data.
-- Include additional interactive filters.
-- Expand country and regional comparisons.
-- Improve website deployment and accessibility.
